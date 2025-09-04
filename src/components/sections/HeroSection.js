@@ -21,15 +21,15 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Content Container */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between px-4 sm:px-6 lg:px-12 pt-16 lg:pt-18 pb-0 max-w-6xl mx-auto min-h-screen">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 lg:px-12 pt-16 md:pt-20 pb-0 max-w-6xl mx-auto min-h-screen">
 
         {/* Left Content */}
-        <div className="flex-1 max-w-2xl mb-8 lg:mb-0 lg:pr-12">
+        <div className="flex-1 max-w-2xl mb-8 md:mb-0 md:pr-8 lg:pr-12">
 
           {/* Introducing Label */}
           <div className="mb-4 md:mb-6 px-1">
             <span
-              className={`${rubik.className} font-bold tracking-widest text-base md:text-lg lg:text-xl`}
+              className={`${rubik.className} font-bold tracking-widest text-base md:text-lg`}
               style={{ color: 'rgba(14, 113, 235, 1)' }}
             >
               Introducing
@@ -37,7 +37,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-gray-900 mb-4 md:mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl text-gray-900 mb-4 md:mb-6 leading-tight">
             <span className={`${rubik.className} font-medium block`}>
               BEST WAY TO MANAGE YOUR
             </span>
@@ -53,7 +53,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Description */}
-          <p className={`${rubik.className} font-normal text-gray-600 text-base md:text-lg lg:text-xl mb-6 md:mb-8 leading-relaxed`}>
+          <p className={`${rubik.className} font-normal text-gray-600 text-base md:text-lg mb-6 md:mb-8 leading-relaxed`}>
             Save everyone time by harnessing your team's collective knowledge
             into easy-to-find information.
           </p>
@@ -72,7 +72,7 @@ const HeroSection = () => {
                 placeholder="Enter your email.."
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-12 md:pl-14 pr-24 md:pr-28 py-2 md:py-2.5 border border-gray-300 rounded-full text-sm placeholder-gray-400 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full pl-12 md:pl-14 pr-24 md:pr-28 py-2 md:py-2.5 border border-gray-300 rounded-full text-sm md:text-base placeholder-gray-400 bg-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
 
               {/* Right Button */}
@@ -121,8 +121,8 @@ const HeroSection = () => {
       </div>
 
       {/* Right Content - Dashboard Image */}
-      <div className="absolute right-0 bottom-0 w-full lg:w-auto flex justify-center lg:justify-end">
-        <div className="relative w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-none lg:w-[500px] xl:w-[600px] 2xl:w-[700px] h-auto">
+      <div className="absolute right-0 bottom-0 w-full md:w-auto flex justify-center md:justify-end">
+        <div className="relative w-full max-w-xs sm:max-w-md md:max-w-xl lg:max-w-none md:w-[500px] lg:w-[650px] xl:w-[680px] 2xl:w-[700px] h-auto">
           <Image
             src="/images/dashboard-preview.png"
             alt="SnapCheck Dashboard Preview"
@@ -133,7 +133,7 @@ const HeroSection = () => {
           />
 
           {/* User Dashboard Callout */}
-          <div className="absolute top-16 sm:top-20 md:top-24 lg:top-32 left-8 sm:left-12 md:left-16 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 md:px-4 md:py-2 shadow-lg border border-gray-200">
+          <div className="absolute top-12 sm:top-16 md:top-20 lg:top-28 left-6 sm:left-10 md:left-20 bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 md:px-4 md:py-2 shadow-lg border border-gray-200">
             <div className="flex items-center space-x-1 md:space-x-2">
               <span className="text-xs md:text-sm text-gray-700 font-medium">User</span>
               <div className="bg-orange-100 text-orange-800 px-2 py-0.5 md:px-3 md:py-1 rounded-full text-xs font-medium border border-orange-200">

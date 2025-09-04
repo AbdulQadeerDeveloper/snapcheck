@@ -84,9 +84,10 @@ const WorkingProcess = () => {
                 Observe the Snapcheck's Working Process Thoroughly
               </h2>
               <div className="relative">
-                {/* Gradient Divider */}
-                <div className="w-16 sm:w-20 h-[5px] rounded-[10px] bg-gradient-to-r from-[#0E71EB] to-[#7433CC] absolute bottom-[15px] left-0" />
+                {/* Gradient Divider with iPad responsiveness */}
+                <div className="w-16 sm:w-20 md:w-24 lg:w-28 h-[5px] md:h-[6px] rounded-[10px] bg-gradient-to-r from-[#0E71EB] to-[#7433CC] absolute bottom-[15px] md:bottom-[18px] left-0" />
               </div>
+
             </div>
 
 

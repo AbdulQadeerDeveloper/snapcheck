@@ -7,7 +7,7 @@ import shadeClients from "../../../public/images/shade.png"
 const Frame10000 = () => {
   return (
     <section className="px-4 bg-white py-16 md:py-28">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 md:mb-12">
           <p
@@ -28,16 +28,16 @@ const Frame10000 = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 px-2 lg:px-12">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 px-2 md:px-4 lg:px-12">
           {/* Left Side - Challenge */}
           <div
-            className="w-full max-w-sm rounded-2xl p-4 md:p-6"
+            className="w-full max-w-sm md:max-w-md rounded-2xl p-4 md:p-6"
             style={{
               border: "1px solid",
               borderImageSource:
                 "linear-gradient(90deg, rgba(14,113,235,0.6) 0%, rgba(116,51,204,0.6) 100%)",
               borderImageSlice: 1,
-              borderRadius: "100rem", // main div border-radius
+              borderRadius: "1rem", // Changed from 100rem to standard value
             }}
           >
             {/* Section Heading */}
@@ -70,11 +70,11 @@ const Frame10000 = () => {
                   key={i}
                   className="flex items-start gap-3 p-3 rounded-lg border border-[#D3D8E4] cursor-pointer group"
                   style={{
-                    border: "0.8px solid", // thinner border for small cards
+                    border: "0.8px solid",
                     borderImageSource:
                       "linear-gradient(90deg, rgba(14,113,235,0.4) 0%, rgba(116,51,204,0.4) 100%)",
                     borderImageSlice: 1,
-                    borderRadius: "0.5rem", // small cards rounded corners
+                    borderRadius: "0.5rem",
                   }}
                 >
                   {/* Left Image Instead of Dot */}
@@ -94,10 +94,10 @@ const Frame10000 = () => {
             </div>
           </div>
 
-          {/* Center - Image */}
-          <div className="lg:w-3/3 flex justify-center flex-shrink-0 my-6 lg:my-0 order-first lg:order-none">
-            <div className="relative w-48 h-48 md:w-64 md:h-64">
-              <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 overflow-hidden">
+          {/* Center - Image - Visible on tablets and up */}
+          <div className="md:w-1/4 flex justify-center flex-shrink-0 my-6 md:my-0 order-first md:order-none">
+            <div className="relative w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64">
+              <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 overflow-hidden">
                 <Image
                   src={shadeClients}
                   alt="Center"
@@ -111,13 +111,13 @@ const Frame10000 = () => {
 
           {/* Right Side - Solution */}
           <div
-            className="w-full max-w-sm rounded-2xl p-4 md:p-6"
+            className="w-full max-w-sm md:max-w-md rounded-2xl p-4 md:p-6"
             style={{
               border: "1px solid",
               borderImageSource:
                 "linear-gradient(90deg, rgba(14,113,235,0.6) 0%, rgba(116,51,204,0.6) 100%)",
               borderImageSlice: 1,
-              borderRadius: "100rem", // main div border-radius
+              borderRadius: "1rem", // Changed from 100rem to standard value
             }}
           >
             {/* Section Heading */}
@@ -151,11 +151,11 @@ const Frame10000 = () => {
                   key={i}
                   className="flex items-start gap-3 p-3 rounded-lg cursor-pointer group"
                   style={{
-                    border: "0.8px solid", // thinner border for small cards
+                    border: "0.8px solid",
                     borderImageSource:
                       "linear-gradient(90deg, rgba(14,113,235,0.4) 0%, rgba(116,51,204,0.4) 100%)",
                     borderImageSlice: 1,
-                    borderRadius: "0.5rem", // small cards rounded corners
+                    borderRadius: "0.5rem",
                   }}
                 >
                   {/* Left Image Instead of Dot */}
@@ -174,8 +174,6 @@ const Frame10000 = () => {
               ))}
             </div>
           </div>
-
-
         </div>
 
         {/* CTA Buttons */}

@@ -59,9 +59,7 @@ section.bg-white.py-20.px-6.mb-\[100px\] {
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-.grid.grid-cols-1.md\:grid-cols-3.gap-6.md\:gap-8 {
-  padding-top: 75px;
-}
+
 .absolute.top-\[70\%\].left-1\/2.transform.-translate-x-1\/2.-translate-y-1\/2.w-48.h-48.md\:w-64.md\:h-64.overflow-hidden {
   position: relative;
   top: 129px;
@@ -110,6 +108,18 @@ section.bg-white.py-20.px-6.mb-\[100px\] {
     height: auto;
     text-align: center;
     padding-top: 60px;
+  }
+  h2.text-2xl.sm\:text-3xl.md\:text-4xl.font-bold.text-gray-800.mb-2 {
+    font-size: 19px;
+  }
+  h2.text-2xl.sm\:text-3xl.md\:text-4xl.font-bold.text-gray-800 {
+    font-size: 20px;
+    line-height: 19px;
+  }
+  .w-16.sm\:w-20.h-\[5px\].rounded-\[10px\].bg-gradient-to-r.from-\[\#0E71EB\].to-\[\#7433CC\].absolute.bottom-\[15px\].left-0 {
+    margin: auto;
+    left: 143px;
+    top: -7px;
   }
   .relative.h-\[320px\].sm\:h-\[400px\].md\:h-\[330px\].w-full.md\:w-\[480px\].mt-20.md\:mt-0.flex-shrink-0 {
     display: none;
@@ -170,7 +180,16 @@ section.bg-white.py-20.px-6.mb-\[100px\] {
     text-align: left;
     padding-top: 80px;
   }
-
+  .text-white.relative.z-10.text-center.md\:text-left {
+    left: 20px;
+  }
+  span.relative.flex.items-center.justify-center.w-full.h-full.bg-white.rounded-\[10px\] {
+    bottom: 10px;
+  }
+  .w-16.sm\:w-20.md\:w-24.lg\:w-28.h-\[5px\].md\:h-\[6px\].rounded-\[10px\].bg-gradient-to-r.from-\[\#0E71EB\].to-\[\#7433CC\].absolute.bottom-\[15px\].md\:bottom-\[18px\].left-0 {
+    left: 44%;
+    top: -1px;
+  }
   h1.font-bold.text-\[28px\].md\:text-\[33px\].leading-\[38px\].md\:leading-\[55px\].font-\[Nunito.Sans\] {
     font-size: 30px;
     line-height: 45px;
